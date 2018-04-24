@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gomodule/redigo/redis"
+	"github.com/YunzhanghuOpen/redigo/redis"
 )
 
 const hashSlots = 16384

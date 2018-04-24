@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gomodule/redigo/redis"
+	"github.com/YunzhanghuOpen/redigo/redis"
 )
 
 var _ redis.Conn = (*Conn)(nil)
