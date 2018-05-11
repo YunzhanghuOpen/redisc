@@ -404,3 +404,11 @@ func (c *Cluster) Stats() map[string]redis.PoolStats {
 
 	return stats
 }
+
+// Stats returns the current statistics for all pools. Keys are node's addresses.
+func (c *Cluster) Pools() map[string]*redis.Pool {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+
+	return c.pools
+}
